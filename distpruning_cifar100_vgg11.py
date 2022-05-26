@@ -72,9 +72,9 @@ transform = transforms.Compose([
 
 
 
-train_set = torchvision.datasets.CIFAR10('./datasets', train=True, 
+train_set = torchvision.datasets.CIFAR100('./datasets', train=True, 
                                          download=True, transform=transform)
-test_set = torchvision.datasets.CIFAR10('./datasets', train=False, 
+test_set = torchvision.datasets.CIFAR100('./datasets', train=False, 
                                         download=True, transform=transform)
 # Number of subprocesses to use for data loading
 num_workers = 4
